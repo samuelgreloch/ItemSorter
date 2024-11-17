@@ -7,7 +7,7 @@ import java.util.Comparator;
  * @author leon on 30/01/2019.
  */
 public class ItemSorter {
-    private Comparator<Item> Items;
+   // private Comparator<Item> Items;
 
     public ItemSorter(Item[] items) {
 

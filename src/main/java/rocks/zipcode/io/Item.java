@@ -10,6 +10,7 @@ public class Item {
 
     public Item() {
 
+        this(0L,"",0.01);
 
     }
 

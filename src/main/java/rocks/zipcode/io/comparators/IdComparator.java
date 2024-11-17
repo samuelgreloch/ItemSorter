@@ -8,14 +8,23 @@ import java.util.LinkedList;
 /**
  * @author leon on 30/01/2019.
  */
-public class IdComparator {
-private Comparator<Item> Comparator;
+public class IdComparator implements Comparator<Item> {
+public IdComparator(){
+super();
 
-public  IdComparator(Item[] Comparator) {
 }
-public Item[] com (Comparator<Item> comparator) {
 
-    return null;
-}
+    @Override
+    public int compare(Item o1, Item o2) {
+        return 0;
+    }
+
+
+//public  IdComparator(Item[] Comparator) {
+//}
+//public Item[] com (Comparator<Item> comparator) {
+
+  //  return null;
+//}
 
 }
