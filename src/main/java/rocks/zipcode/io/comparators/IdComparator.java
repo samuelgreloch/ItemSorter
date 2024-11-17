@@ -9,6 +9,13 @@ import java.util.LinkedList;
  * @author leon on 30/01/2019.
  */
 public class IdComparator {
+private Comparator<Item> Comparator;
 
-    Item item1 = new Item ();
+public  IdComparator(Item[] Comparator) {
+}
+public Item[] com (Comparator<Item> comparator) {
+
+    return null;
+}
+
 }
