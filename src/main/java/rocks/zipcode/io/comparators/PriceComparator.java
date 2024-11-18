@@ -9,13 +9,16 @@ import java.util.Comparator;
  */
 public class PriceComparator implements Comparator<Item> {
 
-    public PriceComparator(){
-
-        super();
-    }
 
     @Override
     public int compare(Item o1, Item o2) {
-        return 0;
+        if(o1.getPrice() == null && o2.getPrice() == null){
+            return 0;
+        }  if (o1.getPrice() == null){
+            return -1;
+        } if (o2.getPrice()== null){
+            return 1;
+        }
+        return Double.compare(o1.getPrice(),o2.getPrice());
     }
 }

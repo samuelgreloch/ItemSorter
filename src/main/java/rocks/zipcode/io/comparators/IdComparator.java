@@ -9,15 +9,21 @@ import java.util.LinkedList;
  * @author leon on 30/01/2019.
  */
 public class IdComparator implements Comparator<Item> {
-public IdComparator(){
-super();
 
-}
 
     @Override
     public int compare(Item o1, Item o2) {
-        return 0;
-    }
+       if (o1 == null && o2  ==null){
+           return 0;
+       }
+       if (o1 == null) {
+           return -1;
+       }
+       if (o2 == null){
+           return 1;
+       }
+       return Long.compare(o1.getId(), o2.getId());
+}
 
 
 //public  IdComparator(Item[] Comparator) {
